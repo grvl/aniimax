@@ -705,3 +705,39 @@ fn test_commitment_holds_while_leveling_up() {
     let pace = plan.pace.expect("pace");
     assert!((pace - rate * PACE_UNIT / 1000.0).abs() < 1e-6 * pace, "pace {pace}");
 }
+
+// Season crops kept busy need what they need. Magic Pumpkin and Memory Lanternfruit grow only under
+// a Sunlamp, so without one the picks are left out. Their seeds come out of the day's season
+// budget: six plots of each all day take more than 1600 a day, so both picks are scaled down alike
+// to what the budget pays for, instead of no plan fitting (a level-up plan included).
+#[test]
+fn test_commitment_season_crops_need_sunlamp_and_budget() {
+    let Some(mut items) = load_items_with_wonder_night() else { return };
+    let modules = ModuleLevels::default();
+    let picks = [("magic_pumpkin", 6.0, CommitmentKind::Units), ("memory_lanternfruit", 6.0, CommitmentKind::Units)];
+    let counts_with = |sunlamps: u32| with_commitments(FacilityCounts::only(&[("Farmland", 12, 5), ("Sunlamp", sunlamps, 1)]), &picks);
+    let status = |items: &[ProductionItem], sunlamps: u32| commitment_status(items, &counts_with(sunlamps), &modules);
+    assert!(status(&items, 0).iter().all(|s| !s.possible), "no Sunlamp");
+    assert!(status(&items, 2).iter().all(|s| s.possible && s.held == 6.0), "no budget set");
+
+    for item in items.iter_mut() {
+        if let Some(season) = item.season.as_mut() {
+            season.currency_per_day = Some(1600.0);
+        }
+    }
+    let held = status(&items, 2);
+    let pumpkin = items.iter().find(|i| i.name == "magic_pumpkin").unwrap();
+    let all_day = 12.0 * 4.0 * PACE_UNIT / pumpkin.production_time;
+    assert!(all_day > 1600.0);
+    for s in &held {
+        assert!(s.possible);
+        assert!((s.held - 6.0 * 1600.0 / all_day).abs() < 1e-3, "held {}", s.held);
+    }
+    let counts = counts_with(2);
+    let plan = solve_exact(&items, "coins", &counts, &modules, Goal::Earn { floors: &[] }, Some(Duration::from_secs(60)), None)
+        .expect("a plan within the seed budget");
+    check_plan(&plan, &items, "coins", &counts, &modules, None).expect("plan passes its re-check");
+    for s in &held {
+        assert!(busy_making(&plan, &items, &s.commitment.item) >= s.held - 1e-6);
+    }
+}
