@@ -15,6 +15,9 @@ rich_grape_compote, Blazing Stove, Fire, 3
 premium_jello, Blazing Stove, Fire, 3
 strawberry_cream_puff, Blazing Stove, Fire, 3
 cranberry_chocolate, Blazing Stove, Fire, 3
+shredded_coconut_cake, Blazing Stove, Fire, 3
+cranberry_soft_cake, Blazing Stove, Fire, 3
+orange_flower_rice_drink, Blazing Stove, Fire, 3
 wheat_tea, Bouncy Brew Keg, Water, 2
 toasted_rice_green_tea, Bouncy Brew Keg, Water, 2
 potato_kvass, Bouncy Brew Keg, Water, 2
@@ -31,6 +34,9 @@ agave_drink, Bouncy Brew Keg, Water, 3
 hot_cocoa, Bouncy Brew Keg, Water, 3
 coconut_cocoa, Bouncy Brew Keg, Water, 3
 orange_flower_dew, Bouncy Brew Keg, Water, 3
+red_sorghum_rice_drink, Bouncy Brew Keg, Water, 3
+cocoa_sweet_cone, Bouncy Brew Keg, Water, 3
+sugar_core_sweet_cone, Bouncy Brew Keg, Water, 3
 wheatmeal, Carousel Mill, Wind, 1
 milled_rice, Carousel Mill, Wind, 1
 tofu, Carousel Mill, Wind, 1
@@ -41,6 +47,10 @@ coconut_oil, Carousel Mill, Wind, 3
 refined_flour, Carousel Mill, Wind, 3
 cocoa_powder, Carousel Mill, Wind, 3
 coconut_milk, Carousel Mill, Wind, 3
+pearl_powder, Carousel Mill, Wind, 3
+sorghum_flour, Carousel Mill, Wind, 3
+gold_dust, Carousel Mill, Wind, 3
+bright_silver_powder, Carousel Mill, Wind, 3
 bread, Claw Game Cooker, Fire, 1
 premium_bread, Claw Game Cooker, Fire, 1
 roasted_soybeans, Claw Game Cooker, Fire, 1
@@ -79,6 +89,12 @@ dye, Crafting Table, Artisanship, 3
 flowers_in_a_bottle, Crafting Table, Artisanship, 3
 advanced_gemstone_dust, Crafting Table, Artisanship, 3
 doll, Crafting Table, Artisanship, 3
+star_diamond, Crafting Table, Artisanship, 3
+pearl_face_cream, Crafting Table, Artisanship, 3
+quicksilver_springstone, Crafting Table, Artisanship, 3
+glitter_powder, Crafting Table, Artisanship, 3
+orange_flower_scented_mat, Crafting Table, Artisanship, 3
+premium_quicksilver_springstone, Crafting Table, Artisanship, 3
 aromathyst, Dewy House, Leisure, 2
 quick_aromathyst, Dewy House, Leisure, 3
 scales, Floral Windmill, Leisure, 3
@@ -89,6 +105,7 @@ cotton_fabric, Joy Wheel Loom, Wind, 2
 palm_rope, Joy Wheel Loom, Wind, 3
 wool_fabric, Joy Wheel Loom, Wind, 3
 dyed_cotton_fabric, Joy Wheel Loom, Wind, 3
+sisal_plush_mat, Joy Wheel Loom, Wind, 3
 potato_chips, Jukebox Dryer, Dark, 1
 dried_lemon_slices, Jukebox Dryer, Dark, 1
 dried_bean_curd, Jukebox Dryer, Dark, 2
@@ -101,11 +118,14 @@ dried_grapes, Jukebox Dryer, Dark, 3
 shredded_coconut, Jukebox Dryer, Dark, 3
 dried_cranberries, Jukebox Dryer, Dark, 3
 dried_flowers, Jukebox Dryer, Dark, 3
+dried_orange_flower, Jukebox Dryer, Dark, 3
+agave_fiber, Jukebox Dryer, Dark, 3
 rock, Mine, Earth, 1
 clay, Mine, Earth, 2
 shell, Mine, Earth, 2
 copper_ore, Mine, Earth, 3
 quartz_ore, Mine, Earth, 3
+silver_ore, Mine, Earth, 3
 gem, Mine, Earth, 3
 wool, Nimbus Bed, Leisure, 2
 quick_wool, Nimbus Bed, Leisure, 3
@@ -123,6 +143,9 @@ orange_flower_incense, Phonolfactory Table, Perfumery, 3
 mixed_perfume, Phonolfactory Table, Perfumery, 3
 lotion, Phonolfactory Table, Perfumery, 3
 premium_mixed_perfume, Phonolfactory Table, Perfumery, 3
+coconut_milk_lotion, Phonolfactory Table, Perfumery, 3
+orange_flower_skin_balm, Phonolfactory Table, Perfumery, 3
+gold_dust_sachet, Phonolfactory Table, Perfumery, 3
 soy_sauce, Pickling Jar, Dark, 2
 salted_cherry_blossom, Pickling Jar, Dark, 2
 sweet_rice_drink, Pickling Jar, Dark, 2
@@ -133,6 +156,7 @@ salted_lemon, Pickling Jar, Dark, 3
 premium_salted_lemon, Pickling Jar, Dark, 3
 candied_strawberries, Pickling Jar, Dark, 3
 candied_orange_flower, Pickling Jar, Dark, 3
+sorghum_fermented_mash, Pickling Jar, Dark, 3
 plain_rice_porridge, Simmering Pot, Fire, 1
 rose_concentrate, Simmering Pot, Fire, 2
 rock_candy, Simmering Pot, Fire, 2
@@ -146,10 +170,16 @@ maple_sugar_chunk, Simmering Pot, Fire, 3
 cranberry_jam, Simmering Pot, Fire, 3
 cocoa_spread, Simmering Pot, Fire, 3
 agave_syrup, Simmering Pot, Fire, 3
+potato_starch, Simmering Pot, Fire, 3
+sorghum_porridge, Simmering Pot, Fire, 3
+orange_flower_syrup, Simmering Pot, Fire, 3
 star, Starfall Hammock, Leisure, 3
+gold_speck_cap, Starfall Hammock, Leisure, 3
 sea_salt, Tidewhisper Sandcastle, Leisure, 1
 quick_sea_salt, Tidewhisper Sandcastle, Leisure, 2
 pearl, Tidewhisper Sandcastle, Leisure, 3
+quick_pearl, Tidewhisper Sandcastle, Leisure, 3
+sweet_cone, Tidewhisper Sandcastle, Leisure, 3
 well_water, Well, Water, 1
 quick_well_water, Well, Water, 1
 fresh_water, Well, Water, 2
@@ -158,6 +188,8 @@ deep_rock_spring_water, Well, Water, 3
 quick_deep_rock_spring_water, Well, Water, 3
 natural_mineral_spring_water, Well, Water, 3
 quick_natural_mineral_spring_water, Well, Water, 3
+snowmelt_cold_spring, Well, Water, 3
+quick_snowmelt_cold_spring, Well, Water, 3
 rough_lumber, Woodworking Bench, Artisanship, 2
 standard_planks, Woodworking Bench, Artisanship, 2
 laminated_beams, Woodworking Bench, Artisanship, 2
