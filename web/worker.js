@@ -134,10 +134,10 @@ async function exactPlanJson(pkg, payload, step = () => {}, first = () => {}) {
         }
     }
     // During a season, a level-up plan makes as much of the season as that pace leaves room for
-    // (or, with the level-up out of reach, already in stock or past RV 20, as the homeland can),
+    // (or, with the level-up out of reach, already in stock or past RV 22, as the homeland can),
     // and the coin solve after it keeps those points. `level_up_strategy` says the player picked
     // the level-up strategy even when there's no level-up left to plan (`level_up` is null at RV
-    // 20); the Priorities strategy ranks the points itself instead. Without this, season items only made it into a level-up
+    // 22); the Priorities strategy ranks the points itself instead. Without this, season items only made it into a level-up
     // plan when they happened to pay the most coins: the Harvest Moon Festival's did, Magical
     // Wonder Night's (behind a Sunlamp, worth less) never do.
     const input = JSON.parse(payload);
